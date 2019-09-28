@@ -13,7 +13,7 @@ import {SocketService} from './socket/socket.service';
   import {IIDClass} from '../interfaces';
   import {DataBusService} from './data-bus.service';
 
-interface IMessages {
+export interface IMessages {
   id:string,
   sessionId?:string;
   data?:any

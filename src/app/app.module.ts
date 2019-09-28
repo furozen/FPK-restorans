@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddDishComponent } from './add-dish/add-dish.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { SearchPageComponent } from './search-page/search-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddDishComponent
+    AddDishComponent,
+    SearchPageComponent
   ],
   imports:[
     BrowserModule,

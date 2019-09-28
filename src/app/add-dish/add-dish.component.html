@@ -1,40 +1,80 @@
 <form  class='addDish' [formGroup]="profileForm" (ngSubmit)="onSubmit()">
-    <label>
-        Станция select:
-        <input type="text" formControlName="station">
+  <select formControlName="station" required matNativeControl [disabled]="disableSelect.value">
+    <option disabled>Выберите станцию:</option>
+    <option value="station-1">Казань Пасс</option>
+    <option value="station-2">Нижний Новгород Пасс</option>
+    <option value="station-3">Рязань Пасс</option>
+    <option value="station-4">Краснодар Пасс</option>
+  </select>
+
+  <label class="">
+    <input type="text" placeholder="Блюдо" formControlName="position" required>
+  </label>
+
+  <label class="">
+    <input  placeholder="Цена:   руб"  type="text" formControlName="price" required>
+  </label>
+
+  <label class="">
+    <input placeholder="Время доставки в минутах" type="text" formControlName="deliveryTime" required>
     </label>
 
-    <label class="">
-        <input type="text" placeholder="Блюдо" formControlName="position">
-    </label>
-    <label class="">
+    <select formControlName="type" matNativeControl [disabled]="disableSelect.value">
+      <option disabled selected>Выберите тип блюда:</option>
+      <option value="type-1">Закуски</option>
+      <option value="type-2">Салаты</option>
+      <option value="type-3">Основные Блюда</option>
+      <option value="type-4">Десерты</option>
+    </select>
 
-        <input  placeholder="Цена"  type="text" formControlName="price">
-    </label>
+    <div class="extra-type">
+      <input type="checkbox" formControlName="kosher" id="kosher">
+      <label for="kosher">Кошерное</label>
+      <input type="checkbox" formControlName="vegan" id="vegan">
+      <label for="vegan">Вегетарианское</label>
+      <input type="checkbox" formControlName="diet" id="diet">
+      <label for="diet">Диетическое</label>
+      <input type="checkbox" formControlName="halal" id="halal">
+      <label for="halal">Халяльное</label>
+    </div>
 
-    <label class="">
-        <input placeholder="Время доставки" type="text" formControlName="deliveryTime">
-    </label>
+    <input placeholder="Заглавная картинка, url" type="text" formControlName="mainImageUrl">
 
-    <label class="">
-        <textarea placeholder="Описание" type="text" formControlName="description"></textarea>
-    </label>
+  <label class="">
+    <textarea placeholder="Описание" type="text" formControlName="description" required></textarea>
+  </label>
 
-    <label class="">
-        <textarea placeholder="Состав" type="text" formControlName="indigridients"></textarea>
-    </label>
+  <label class="">
+    <textarea placeholder="Состав" type="text" formControlName="indigridients" required></textarea>
+  </label>
 
-    <label class="">
-        select:
-        <input placeholder="Тип" type="text" formControlName="type">
-    </label>
-
-    <label class="">
-        select:
-        <input placeholder="Заглавная картинка, url" type="text" formControlName="mainImageUrl">
-    </label>
-
-
+  <div class="timeslot">
+    <h2>Доступность блюда к заказу по времени</h2>
+    <div class="timeslot-1">
+      <span>С </span>
+      <input type="text" name="timeslot-1-start" required>
+      <span>До </span>
+      <input type="text" name="timeslot-1-finish" required>
+    </div>
+    <div class="timeslot-2">
+      <span>С </span>
+      <input type="text" name="timeslot-2-start">
+      <span>До </span>
+      <input type="text" name="timeslot-2-start">
+    </div>
+    <div class="timeslot-3">
+      <span>С </span>
+      <input type="text" name="timeslot-3-start">
+      <span>До </span>
+      <input type="text" name="timeslot-3-finish">
+    </div>
+    <div class="timeslot-4">
+      <span>С </span>
+      <input type="text" name="timeslot-4-start">
+      <span>До </span>
+      <input type="text" name="timeslot-4-finish">
+    </div>
+  </div>
 
     <button type="submit" [disabled]="!profileForm.valid">Submit</button>
 </form>
