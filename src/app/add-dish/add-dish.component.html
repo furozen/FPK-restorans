@@ -1,0 +1,40 @@
+<form  class='addDish' [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <label>
+        Станция select:
+        <input type="text" formControlName="station">
+    </label>
+
+    <label class="">
+        <input type="text" placeholder="Блюдо" formControlName="position">
+    </label>
+    <label class="">
+
+        <input  placeholder="Цена"  type="text" formControlName="price">
+    </label>
+
+    <label class="">
+        <input placeholder="Время доставки" type="text" formControlName="deliveryTime">
+    </label>
+
+    <label class="">
+        <textarea placeholder="Описание" type="text" formControlName="description"></textarea>
+    </label>
+
+    <label class="">
+        <textarea placeholder="Состав" type="text" formControlName="indigridients"></textarea>
+    </label>
+
+    <label class="">
+        select:
+        <input placeholder="Тип" type="text" formControlName="type">
+    </label>
+
+    <label class="">
+        select:
+        <input placeholder="Заглавная картинка, url" type="text" formControlName="mainImageUrl">
+    </label>
+
+    <input >
+
+    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+</form>
