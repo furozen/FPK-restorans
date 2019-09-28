@@ -21,10 +21,12 @@
 
     <select formControlName="type" matNativeControl >
       <option disabled selected>Выберите тип блюда:</option>
-      <option value="type-1">Закуски</option>
-      <option value="type-2">Салаты</option>
-      <option value="type-3">Основные Блюда</option>
-      <option value="type-4">Десерты</option>
+      <option value="1">Закуски</option>
+      <option value="2">Салаты</option>
+      <option value="3">Основные Блюда</option>
+      <option value="4">Десерты</option>
+      <option value="5">Суп</option>
+      <option value="6">Напитки</option>
     </select>
 
     <div class="extra-type">
@@ -52,27 +54,27 @@
     <h2>Доступность блюда к заказу по времени</h2>
     <div class="timeslot-1">
       <span>С </span>
-      <input type="text" name="timeslot-1-start" required>
+      <input type="text" name="timeslot-1-start" formControlName="timeslot-1-start" required>
       <span>До </span>
-      <input type="text" name="timeslot-1-finish" required>
+      <input type="text" name="timeslot-1-finish" formControlName="timeslot-1-finish"  required>
     </div>
     <div class="timeslot-2">
       <span>С </span>
-      <input type="text" name="timeslot-2-start">
+      <input type="text" name="timeslot-2-start" formControlName="timeslot-2-start" >
       <span>До </span>
-      <input type="text" name="timeslot-2-start">
+      <input type="text" name="timeslot-2-start" formControlName="timeslot-2-finish" >
     </div>
     <div class="timeslot-3">
       <span>С </span>
-      <input type="text" name="timeslot-3-start">
+      <input type="text" name="timeslot-3-start" formControlName="timeslot-3-start" >
       <span>До </span>
-      <input type="text" name="timeslot-3-finish">
+      <input type="text" name="timeslot-3-finish" formControlName="timeslot-3-finish" >
     </div>
     <div class="timeslot-4">
       <span>С </span>
-      <input type="text" name="timeslot-4-start">
+      <input type="text" name="timeslot-4-start" formControlName="timeslot-4-start" >
       <span>До </span>
-      <input type="text" name="timeslot-4-finish">
+      <input type="text" name="timeslot-4-finish" formControlName="timeslot-4-finish" >
     </div>
   </div>
 

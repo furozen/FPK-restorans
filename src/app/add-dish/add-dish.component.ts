@@ -29,6 +29,17 @@ export class AddDishComponent implements OnInit,IIDClass {
     type: new FormControl(''),
     mainImageUrl: new FormControl(''),
     kosher: new FormControl(''),
+    vegan: new FormControl(''),
+    diet: new FormControl(''),
+    halal: new FormControl(''),
+    "timeslot-1-start": new FormControl(''),
+    "timeslot-1-finish": new FormControl(''),
+    "timeslot-2-start": new FormControl(''),
+    "timeslot-2-finish": new FormControl(''),
+    "timeslot-3-start": new FormControl(''),
+    "timeslot-3-finish": new FormControl(''),
+    "timeslot-4-start": new FormControl(''),
+    "timeslot-4-finish": new FormControl(''),
   });
 
 

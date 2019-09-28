@@ -17,7 +17,6 @@ import { SearchPageComponent } from './search-page/search-page.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-
     ReactiveFormsModule
   ],
   providers: [],
