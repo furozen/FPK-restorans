@@ -2,4 +2,116 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  width: calc(100% - 50px);
+  padding: 25px 25px;
+  font-family: "Arial", sans-serif;
+}
+
+select {
+  min-height: 35px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+
+  & option {
+    min-height: 25px;
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+label {
+  width: 100%;
+}
+
+.timeslot {
+  background-color: lightgray;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+
+  & h2 {
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    width: 100%;
+  }
+  & > div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    & input {
+      text-align: center;
+      width: 30%;
+      margin: 0 10px 0;
+    }
+  }
+}
+
+.extra-type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  & label {
+    width: calc(50% - 10px);
+    background-color: lightgray;
+    border-radius: 10px;
+    min-height: 35px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 200ms linear;
+  }
+  & input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    z-index: -1;
+    &:checked+label {
+      background-color: dimgrey;
+      color: #fff;
+      transition: all 200ms linear;
+    }
+  }
+}
+
+input, textarea {
+  resize: none;
+  width: calc(100% - 10px);
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: 1px solid darkgrey;
+  outline: none;
+  transition: all 200ms linear;
+  margin-bottom: 10px;
+  &::placeholder {
+    font-size: 20px;
+  }
+  &:focus {
+    border: 1px solid blue;
+    transition: all 200ms linear
+  }
+}
+
+button[type="submit"] {
+  width: 100%;
+  min-height: 35px;
+  font-size: 20px;
+  background-color: lightgray;
+  border: 1px solid darkgrey;
+  outline: none;
+  border-radius: 10px;
+  transition: all 200ms linear;
+  &:hover,
+  &:focus {
+    border: 1px solid black;
+    transition: all 200ms linear;
+  }
 }
