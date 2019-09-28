@@ -28,6 +28,7 @@ export class AddDishComponent implements OnInit,IIDClass {
     indigridients: new FormControl(''),
     type: new FormControl(''),
     mainImageUrl: new FormControl(''),
+    kosher: new FormControl(''),
   });
 
 

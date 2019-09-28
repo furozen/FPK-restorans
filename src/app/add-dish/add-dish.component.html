@@ -1,5 +1,5 @@
 <form  class='addDish' [formGroup]="profileForm" (ngSubmit)="onSubmit()">
-  <select formControlName="station" required matNativeControl [disabled]="disableSelect.value">
+  <select formControlName="station" required matNativeControl >
     <option disabled>Выберите станцию:</option>
     <option value="station-1">Казань Пасс</option>
     <option value="station-2">Нижний Новгород Пасс</option>
@@ -19,7 +19,7 @@
     <input placeholder="Время доставки в минутах" type="text" formControlName="deliveryTime" required>
     </label>
 
-    <select formControlName="type" matNativeControl [disabled]="disableSelect.value">
+    <select formControlName="type" matNativeControl >
       <option disabled selected>Выберите тип блюда:</option>
       <option value="type-1">Закуски</option>
       <option value="type-2">Салаты</option>
