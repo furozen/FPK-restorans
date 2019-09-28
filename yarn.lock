@@ -550,8 +550,8 @@
   integrity sha512-GpSwvyXOcOOlV70vbnzjj4fW5xW/FdUF6nQEt1ENy7m4ZCczi1+/buVUPAqmGfqznsORNFzUMjctTIp8a9tuCQ==
 
 "FPKFOOD-models@https://github.com/furozen/FPKFood-models.git":
-  version "0.0.1"
-  resolved "https://github.com/furozen/FPKFood-models.git#f7f35ebb8ce141f96c81dfdc54bab2c1778a6d39"
+  version "0.0.2"
+  resolved "https://github.com/furozen/FPKFood-models.git#ff939356da91bdf3b1aaa60e2020b078ed879669"
   dependencies:
     ts-node "^8.4.1"
     tslint "^5.20.0"
