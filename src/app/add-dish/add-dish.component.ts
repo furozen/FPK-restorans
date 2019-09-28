@@ -29,6 +29,9 @@ export class AddDishComponent implements OnInit,IIDClass {
     type: new FormControl(''),
     mainImageUrl: new FormControl(''),
     kosher: new FormControl(''),
+    vegan: new FormControl(''),
+    diet: new FormControl(''),
+    halal: new FormControl(''),
   });
 
 
