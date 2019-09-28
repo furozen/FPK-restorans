@@ -1,0 +1,21 @@
+table {
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: calc(100% - 50px);
+
+  & tr {
+    & td {
+      border: 1px solid black;
+      &:last-child {
+        width: 70%;
+        &.url {
+          display: flex;
+          word-break: break-all;
+          height: 50px;
+          width: 100%;
+          overflow-y: auto;
+        }
+      }
+    }
+  }
+}
