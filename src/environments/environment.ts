@@ -6,7 +6,7 @@ import {IEnviroment} from './IEnviroment';
 
 export const environment:IEnviroment = {
   production: false,
-  socketIo:{url:'wss://localhost:6760'},
+  socketIo:{url:'wss://hackathon.xe-xe.org:6760/'},
   logLevel:'verbose'
 };
 
